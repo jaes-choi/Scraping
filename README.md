@@ -15,7 +15,19 @@
   
   > https://jaes-choi.github.io/Scraping/sample/kids/en/rain.html
 
+- 실습용 링크:
+  > https://finance.naver.com
+
+  > https://news.naver.com
+
+  > https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=101&oid=025&aid=0003006782
+
+
 ### 참고
+- chromedriver download
+  > https://chromedriver.chromium.org/
+- Open DART - API
+  > https://opendart.fss.or.kr/
 - 가요+동요: 하나로 묶어 놓음 것
   > https://jaes-choi.github.io/Scraping/sample/sample.html
 - 가요+동요: 하나로 묶어 놓음 것, lang="kr"
