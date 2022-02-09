@@ -2,14 +2,23 @@
 
 
 ### 실습을 위한 샘플 페이지들
-- 실습1: 
+- 실습: 
+  > https://jaes-choi.github.io/Scraping/sample/index.html
+  > https://jaes-choi.github.io/Scraping/sample/kids/kr/candy.html
+  > https://jaes-choi.github.io/Scraping/sample/kids/kr/bear.html
+  > https://jaes-choi.github.io/Scraping/sample/kids/kr/tv.html
+  > https://jaes-choi.github.io/Scraping/sample/kids/en/star.html
+  > https://jaes-choi.github.io/Scraping/sample/kids/en/rain.html
+
+### 참고
+- 가요+동요: 하나로 묶어 놓음 것
   > https://jaes-choi.github.io/Scraping/sample/sample.html
-- 실습2:
-  > https://jaes-choi.github.io/Scraping/sample/sample_euc_kr.html
-- 실습3:
+- 가요+동요: 하나로 묶어 놓음 것, lang="kr"
+  > https://jaes-choi.github.io/Scraping/sample/sample_lang_kr.html
+- 가요(table)만, lang="kr", charset="UTF-8"
+  > https://jaes-choi.github.io/Scraping/sample/sample_k_pop_utf_8.html
+- 가요(table)만, lang="kr"
+  > https://jaes-choi.github.io/Scraping/sample/sample_k_pop_lang_kr.html
+- 동요만
   > https://jaes-choi.github.io/Scraping/sample/sample_kids_song.html
-- 기타1: 
-  > https://jaes-choi.github.io/Scraping/sample/sample_old_k_pop_utf_8.html
-- 기타2: 
-  > https://jaes-choi.github.io/Scraping/sample/sample_old_k_pop_lang_kr.html
 
