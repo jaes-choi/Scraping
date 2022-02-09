@@ -4,10 +4,15 @@
 ### 실습을 위한 샘플 페이지들
 - 실습: 
   > https://jaes-choi.github.io/Scraping/sample/index.html
+
   > https://jaes-choi.github.io/Scraping/sample/kids/kr/candy.html
+
   > https://jaes-choi.github.io/Scraping/sample/kids/kr/bear.html
+
   > https://jaes-choi.github.io/Scraping/sample/kids/kr/tv.html
+
   > https://jaes-choi.github.io/Scraping/sample/kids/en/star.html
+  
   > https://jaes-choi.github.io/Scraping/sample/kids/en/rain.html
 
 ### 참고
