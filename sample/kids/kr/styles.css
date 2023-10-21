@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    background: linear-gradient(45deg, #ff99cc, #cc99ff, #99ccff, #99ffcc);
+    background-size: 400% 400%;
+    animation: gradient 10s linear infinite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+h2 {
+    font-size: 2.25rem;
+    text-shadow: 2px 2px 5px #FFA07A;
+    animation: colorChange 5s linear infinite alternate;
+}
+
+p {
+    font-size: 1.8rem;
+    color: #FFA07A;
+    text-shadow: 1px 1px 3px #FFD700;
+    margin: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+    padding: 20px;
+    max-width: 600px;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #FFD700;
+    }
+    25% {
+        color: #FF69B4;
+    }
+    50% {
+        color: #ADD8E6;
+    }
+    75% {
+        color: #98FB98;
+    }
+    100% {
+        color: #FFD700;
+    }
+}
