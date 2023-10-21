@@ -26,13 +26,13 @@ body {
     }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px #FFA07A;
     animation: colorChange 5s linear infinite alternate;
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #FFA07A;
     text-shadow: 1px 1px 3px #FFD700;
     margin: 20px;
