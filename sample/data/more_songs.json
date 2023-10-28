@@ -1,11 +1,13 @@
 [
   {
     "제목": "물 좋아 (Do You Like Water?)",
+    "link": "http://example.com/k-pop/water",
     "가수": "김현식",
     "연도": 1986
   },
   {
     "제목": "풍경",
+    "link": "http://example.com/k-pop/scenery",
     "가수": "이승철",
     "연도": 1989
   }
