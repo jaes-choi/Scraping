@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -51,11 +50,27 @@
       margin: 0 auto;
       border-collapse: collapse;
     }
-	th, td {
-	  border: 1px solid #ccc;
-	  padding: 4px 8px; /* 셀 내부의 상단 및 하단 패딩을 조절하여 높이 조절 */
-	  text-align: center;
-	}
+    th, td {
+      border: 1px solid #ccc;
+      padding: 4px 8px; /* 셀 내부의 상단 및 하단 패딩을 조절하여 높이 조절 */
+      text-align: center;
+    }
+    #songTable th:first-child,
+    #songTable td:first-child {
+      width: 60%; /* 제목 컬럼 폭을 60%로 조정 */
+    }
+    button {
+      margin-top: 20px; /* 버튼의 위 여백 추가 */
+      padding: 10px 20px; /* 버튼 내 여백 추가 */
+      background-color: #333; /* 배경색 변경 */
+      color: #fff; /* 텍스트 색상 변경 */
+      border: none; /* 테두리 제거 */
+      border-radius: 5px; /* 모서리 둥글게 */
+      cursor: pointer; /* 커서 모양 변경 */
+    }
+    button:hover {
+      background-color: #555; /* 마우스 호버 시 배경색 변경 */
+    }
   </style>
 </head>
 
@@ -88,7 +103,7 @@
       <td>이문세</td><td>1988</td>
     </tr>
   </table>
-  <br/>
+
   <center><button onclick="fetchAndAddSongs()">항목 추가</button></center>
   
   <script>
