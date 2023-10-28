@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="jaes">
+  <title>유명한 노래들</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      margin: 0; /* 상단 여백 제거 */
+    }
+    h2 {
+      color: #333;
+      margin-left: 20px;
+      font-size: 24px; /* 폰트 크기 조절 */
+      font-weight: bold; /* 폰트 굵기 조절 */
+      text-transform: uppercase; /* 대문자로 변환 */
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* 그림자 효과 추가 */
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .top {
+      padding: 20px;
+      background-color: #fff;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px; /* top과 bottom 사이에 20px의 공간 추가 */
+    }
+    .left-column, .right-column {
+      width: 45%; /* 각 컬럼 너비 조절 가능 */
+      padding: 20px;
+      background-color: #fff;
+    }
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+	th, td {
+	  border: 1px solid #ccc;
+	  padding: 4px 8px; /* 셀 내부의 상단 및 하단 패딩을 조절하여 높이 조절 */
+	  text-align: center;
+	}
+  </style>
+</head>
+
+<body>
+  <h1>유명한 노래들 모음</h1>
+  <hr>
+  <h2>80년대 가요</h2>
+  <table id="songTable">
+    <tr>
+      <th>제목</th><th>가수</th><th>연도</th>
+    </tr>
+    <tr>
+      <td><a href="http://example.com/k-pop/hangjin" class="k-pop" id="kpop1">행진</a></td>
+      <td>들국화</td><td>1985</td>
+    </tr>
+    <tr>
+      <td><a href="http://example.com/k-pop/sarang" class="k-pop" id="kpop2">사랑하기 때문에</a></td>
+      <td>유재하</td><td>1987</td>
+    </tr>
+    <tr>
+      <td><a href="http://example.com/k-pop/danbal" class="k-pop" id="kpop3">단발머리</a></td>
+      <td>조용필</td><td>1980</td>
+    </tr>
+    <tr>
+      <td><a href="http://example.com/k-pop/radio" class="k-pop" id="kpop4">크게 라디오를 켜고</a></td>
+      <td>시나위</td><td>1986</td>
+    </tr>
+    <tr>
+      <td><a href="http://example.com/k-pop/noeul" class="k-pop" id="kpop5">붉은 노을</a></td>
+      <td>이문세</td><td>1988</td>
+    </tr>
+  </table>
+  <br/>
+  <center><button onclick="fetchAndAddSongs()">항목 추가</button></center>
+  
+  <script>
+    async function fetchAndAddSongs() {
+      try {
+        const response = await fetch('https://jaes-choi.github.io/Scraping/sample/data/more_songs.json');
+        const data = await response.json();
+
+        const table = document.getElementById('songTable');
+
+        // JSON 데이터 반복하여 테이블에 추가
+        data.forEach(song => {
+          const newRow = table.insertRow(table.rows.length);
+          const titleCell = newRow.insertCell(0);
+          const artistCell = newRow.insertCell(1);
+          const yearCell = newRow.insertCell(2);
+
+          // 링크를 포함한 제목 추가
+          const link = document.createElement('a');
+          link.href = song.link; // 링크 주소 설정
+          link.textContent = song.제목;
+          titleCell.appendChild(link);
+
+          artistCell.textContent = song.가수;
+          yearCell.textContent = song.연도;
+        });
+
+        // 버튼 숨기기
+        const button = document.querySelector('button');
+        button.style.display = 'none';
+      } catch (error) {
+        console.error('데이터를 불러오는 중 오류가 발생했습니다:', error);
+      }
+    }
+  </script>
+</body>
+
+</html>
